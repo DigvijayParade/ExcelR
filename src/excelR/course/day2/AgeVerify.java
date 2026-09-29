@@ -18,6 +18,8 @@ public class AgeVerify {
 		else if (age <= 18 && age > 0) {
 			
 			System.out.println("Youre not an adult yet.....");
+			
+			
 		}
 	}
 }
