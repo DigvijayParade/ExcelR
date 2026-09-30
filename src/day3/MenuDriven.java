@@ -7,36 +7,44 @@ public class MenuDriven {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner (System.in);
-		
-		System.out.println("Enter number 1 : ");
-		int num1 = sc.nextInt();
-		
-		System.out.println("Enter number 2 : ");
+	
+		System.out.println("Enter num 1 : ");
+		int num1 = sc.nextInt();		
+		System.out.println("Enter num 2 : ");
 		int num2 = sc.nextInt();
 		
-		System.out.println("Press 1 for Addition");
-		System.out.println("Press 2 for Subtraction");
-		System.out.println("Press 3 for Multiplication");
-		System.out.println("Press 4 for Division");
-		System.out.println("0 for the Exit");
-		double result = 0.0 ;
-		System.out.println("Enter Choice : ");
 		int choice = 0 ;
+		double result = 0.0 ;
 		do {
-		
+			System.out.println("enter 1 for the add");
+			System.out.println("enter 2 for the minus");
+			System.out.println("enter 3 for the multiply");
+			System.out.println("enter 4 for the division");
+			System.out.println("enter 0 for the exit");
+			System.out.println("Enter the choice : ");
 			choice = sc.nextInt();
-		switch(choice) {
+			if(choice <= 4 ) {
+			switch(choice) {
+			
 			case 1 : result = num1 + num2 ;
-					break ;
+				break ;
 			case 2 : result = num1 - num2 ;
-			break ;
+				break ;
 			case 3 : result = num1 * num2 ;
-			break ;
-			case 4 : result = num1 / num2 ;
-			break ;
-			case 0 : break ;
-		}
-		System.out.println(result);
+				break ;
+			case 4 : if(num2 != 0) {result = num1 / num2;} 
+			else {System.out.println("Cant divide by zero");}
+				break ;
+			case 0 : System.out.println("Thanks Goodbye !!"); ;
+				break ;
+			}}
+			else {System.out.println("Invalid choice");
+			return ;}
+			if(choice == 0) {
+				System.out.println("------------------");
+			}else
+			System.out.println("Result : "+result);
+			
 		}while(choice != 0);
 		
 	}
