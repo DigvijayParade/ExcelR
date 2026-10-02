@@ -9,24 +9,14 @@ public class Additon {
 		Scanner sc = new Scanner (System.in);
 		
 		int num = sc.nextInt();
-		
-		int n4 = num % 10 ;
-		num = num/10 ;
-		
-		int n3 = num % 10 ;
-		num = num / 10 ;
-		
-		int n2 = num % 10 ;
-		num = num /10 ;
-		
-		int n1 = num % 10 ;
-		num = num/10 ;
-		System.out.println();
-		
-		
-		
-		int totalSum = n1+n2+n3+n4 ;
-		System.out.println(totalSum);
+		int totalsum = 0 ;
+		while(num > 0) {
+			
+			int lastDigit = num % 10 ;
+			num = num / 10 ;
+			totalsum +=  lastDigit;
+		}
+		System.out.println(totalsum);
 		
 	}
 }
