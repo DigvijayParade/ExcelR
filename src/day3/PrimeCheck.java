@@ -5,26 +5,31 @@ import java.util.Scanner;
 public class PrimeCheck {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter A Number "); //10      
+		int num=sc.nextInt();
 		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Enter num to check : ");
-		int num = sc.nextInt();
-		
-		int count = 0;
-		
-		for(int i = 1; i <= num; i++) {
-			if(num % i == 0) {
-				count++;      
+		int counter=0;
+		int loopCounter=0;
+		for(int i=1;i<=num;i++)
+		{
+			loopCounter++;
+			if(num%i==0)
+			{
+				counter++;
 			}
 		}
 		
-		if(count == 2) {
-			System.out.println(num + " is a prime number");
-		} else {
-			System.out.println(num + " is not a prime number");
+		if(counter==2)
+		{
+			System.out.println("Prime");
 		}
-		
-		sc.close();
+		else
+		{
+			System.out.println("Not Prime");
+		}
+
+		System.out.println("Iteration Count "+loopCounter);
 	}
+
 }
