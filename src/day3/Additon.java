@@ -15,6 +15,8 @@ public class Additon {
 			int lastDigit = num % 10 ;
 			num = num / 10 ;
 			totalsum +=  lastDigit;
+			
+			
 		}
 		System.out.println(totalsum);
 		
