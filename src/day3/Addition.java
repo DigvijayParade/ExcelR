@@ -12,13 +12,18 @@ public class Addition{
 		
 		int num = sc.nextInt();
 		int lastDigit = 0 ;
+		int sum = 0 ;
+		
 		while(num != 0){
-		lastDigit = num % 10 ;
-		num = num/10 ;
-		lastDigit += lastDigit ;
+			
+			lastDigit = num % 10 ;
+			num = num/10 ;
+			sum += lastDigit ;
+			
 		}
 		
 		
-		System.out.println(lastDigit);
+		System.out.println(sum);
+		sc.close();
 	}
 }
