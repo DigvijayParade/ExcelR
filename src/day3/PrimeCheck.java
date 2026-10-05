@@ -12,7 +12,7 @@ public class PrimeCheck{
 		int num = sc.nextInt();
 		boolean isPrime = true ;
 		
-		for (int i = 2 ; i*i <=s num ; i++) {
+		for (int i = 2 ; i*i <= num ; i++) {
 			
 			if(num % i == 0) {
 				
