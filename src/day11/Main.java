@@ -8,5 +8,6 @@ public class Main {
 		
 		System.out.println(t1.getName());
 		t1.start();
+		
 	}
 }
