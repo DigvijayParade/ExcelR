@@ -11,6 +11,7 @@ public class ArrayListDemo {
 		list1.add(10);
 		list1.add(10.5);
 		list1.add("Alice");
+		
 		list1.add(true);
 		list1.add('A');
 		list1.add(new Student());
