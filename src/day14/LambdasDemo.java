@@ -8,11 +8,18 @@ public class LambdasDemo {
 	
 	public static void main(String[] args) {
 		
-		FInterface m1 = () -> System.out.println(greet);System.out.println("Thanks...");
+		FInterface m1 = () -> {System.out.println(greet);System.out.println("Thanks...");};
 		
 		m1.print();
 //		LambdasDemo obj = new LambdasDemo();
 		
 		m2.print();
+		
+		System.out.println("Another one /////////////");
+		
+		Greet m3 = (n) -> System.out.println("Hello "+n);
+		
+		String name = "Gannu";
+		m3.greet(name);
 	}
 }
