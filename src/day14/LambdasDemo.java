@@ -21,5 +21,19 @@ public class LambdasDemo {
 		
 		String name = "Gannu";
 		m3.greet(name);
+		
+		System.out.println("Another one /////////////");
+		
+		Area m4 = r -> Math.PI*r*r;
+		
+		System.out.println(m4.area(10));
+		
+		System.out.println("Another one /////////////");
+		
+		Sample m5 = (o) -> {System.out.println(o.getName());System.out.println(o.getCity());};
+		
+		Details d1 = new Details("Nanu","Barshi");
+		
+		m5.display(d1);
 	}
 }
